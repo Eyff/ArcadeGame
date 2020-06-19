@@ -116,7 +116,13 @@ func (iH *InvaderHolder)Move(){
 }
 	
 }
+//Wipe cleans Invaders array and respawns with lvl 1
+func (iH *InvaderHolder)Wipe(sH *SpriteHolder){
+	iH.invaders = nil
+	iH.Spawn(1,sH)
+}
 
+//CheckAlive checks if invaders are alive and if none is left returns true
 func (iH *InvaderHolder)CheckAlive() bool{
 	if len(iH.invaders)== 0{
 		return true
