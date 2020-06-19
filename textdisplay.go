@@ -36,7 +36,7 @@ func (td *TextDisplay)Init(){
 		DPI:     72,
 		Hinting: font.HintingFull,
 	})
-	td.text = "Game Over!!!!!!!!!!!!!/n/n/nPress Enter to restart!"
+	td.text = "Game Over!!!!!!!!!!!!! - Press Enter to restart!"
 }
 
 //DrawLives draws the current lives
@@ -51,5 +51,5 @@ func (td TextDisplay)DrawLevel(level int, screen *ebiten.Image){
 }
 //DrawGameOver draws gameover message
 func (td TextDisplay)DrawGameOver(screen *ebiten.Image){
-	text.Draw(screen, td.text, td.mplusNormalFont, 200,200,color.White)
+	text.Draw(screen, td.text, td.mplusNormalFont, 100,200,color.White)
 }
