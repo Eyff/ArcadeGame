@@ -3,7 +3,7 @@ package main
 import(
 	"github.com/hajimehoshi/ebiten"
 	"log"
-	"github.com/Eyff/game5"
+	"github.com/Eyff/ArcadeGame"
 )
 
 // Game implements ebiten.Game interface.
