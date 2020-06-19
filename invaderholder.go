@@ -4,7 +4,6 @@ import(
 	"github.com/hajimehoshi/ebiten"
 	"time"
 	"math/rand"
-	"log"
 	)
 
 //Invaderholder holds the fleet of Invaders
@@ -91,7 +90,6 @@ func (iH *InvaderHolder)Move(){
 		}
 		if blockRight { 
 			iH.rightmove = false
-			log.Println("Leftmove")
 		}
 		if iH.rightmove{
 			for i := 0; i < len(iH.invaders);i++{
