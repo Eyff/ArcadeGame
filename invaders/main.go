@@ -62,6 +62,8 @@ func (g *Game) Update(screen *ebiten.Image) error {
 	g.exh.UpdateExplosions()
 	if g.pl.Lives == 0 && ebiten.IsKeyPressed(ebiten.KeyEnter){
 		g.pl.Lives = 3
+		g.lvl = 1
+		g.iH.Wipe(g.sH)
 	}
     // Write your game's logical update.
     return nil
